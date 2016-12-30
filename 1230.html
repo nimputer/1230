@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    
+    <script>
+//    $(document).ready(function(){
+//       $("h1").hide(1200);
+//        
+//        
+////    });
+//        
+//        $(document).ready(function(){
+//           $("button").click(function(){
+//              $("p").toggle(1000);
+//               
+//           });
+//            
+//            
+//        });
+        
+        $(document).ready(function(){
+            $("p").hide();
+//           $("h1").click(function(){
+//               $("P").slideToggle(2000);
+          $("h1").hover(function(){       
+               $(this).next().stop().slideToggle();
+               
+           });
+            
+        });
+    
+    </script>
+    
+    <style>
+        .container {
+        width: 600px;
+        margin:auto;
+        }
+        
+        h1 {
+            cursor:pointer;
+            margin: 0;
+            
+        }
+    </style>
+
+</head>
+<body>
+<div class="container">
+    
+    <h1>ABCDE</h1>
+    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum autem quis consectetur beatae praesentium dolores possimus, omnis animi tenetur hic culpa voluptate molestias optio perferendis eos inventore! Doloremque sequi, voluptatibus.</P>
+    
+    <h1>ABCDE</h1>
+    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum autem quis consectetur beatae praesentium dolores possimus, omnis animi tenetur hic culpa voluptate molestias optio perferendis eos inventore! Doloremque sequi, voluptatibus.</P>
+    
+    
+    <h1>ABCDE</h1>
+    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum autem quis consectetur beatae praesentium dolores possimus, omnis animi tenetur hic culpa voluptate molestias optio perferendis eos inventore! Doloremque sequi, voluptatibus.</P>
+    
+    
+</div>
+
+<!--
+  <button>HIDE</button>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe officiis repellat iste quae quibusdam eius nam cumque suscipit asperiores minus, sapiente eligendi ipsa ducimus quas delectus voluptate, dicta, quisquam nisi?</p>
+-->
+<!--   <h1 id="title">ABCDE</h1>-->
+<!--
+   <script>
+    $("#title").hide();
+    
+    </script>
+   
+-->
+    
+    
+</body>
+</html>
